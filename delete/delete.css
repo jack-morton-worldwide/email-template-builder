@@ -1,0 +1,77 @@
+/*=======================
+Reset Styles
+http://templates.mailchimp.com/development/css/reset-styles/
+=======================*/
+body{
+  margin:0;
+  padding:0;
+}
+img{
+  border:0 none;
+  display: block;
+  height:auto;
+  line-height:100%;
+  outline:none;
+  text-decoration:none;
+}
+a img{
+  border:0 none;
+}
+.imageFix{
+  display:block;
+}
+table, td{
+  border-collapse:collapse;
+}
+#bodyTable{
+  height:100% !important;
+  margin:0;
+  padding:0;
+  width:100% !important;
+}
+/*=======================
+Client-specific overrides
+http://templates.mailchimp.com/development/css/client-specific-styles/
+=======================*/
+ /* Outlook Outlook.com / Hotmail
+ .ExternalClass Class Override */
+ .ExternalClass{
+  width:100%;
+}
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div{
+  line-height: 100%;
+}
+/* Outlook 2007 / 2010 / 2013
+“Read in Browser” Link */
+#outlook a{
+  padding:0;
+}
+/* Outlook 2007 / 2010 / 2013
+<table> Element Spacing */
+table{
+  mso-table-lspace:0pt;
+  mso-table-rspace:0pt;
+}
+/* Outlook 2007 / 2010 / 2013
+Image resizing */
+img{
+  -ms-interpolation-mode:bicubic;
+}
+  /* OSX / iOS
+  WebKit Text Size Adjustment */
+  body{
+    -webkit-text-size-adjust:100%;
+  }
+/* Windows Mobile
+Windows Mobile Text Size Adjustment */
+body{
+  -ms-text-size-adjust:100%;
+}
+/*=======================
+User styles
+=======================*/

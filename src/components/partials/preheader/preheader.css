@@ -1,0 +1,17 @@
+      .preheader {
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+
+      .preheader .text {
+        color: #333d47;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: right;
+      }
+
+      .preheader .text a {
+        color: #333d47;
+        font-weight: normal;
+        text-decoration: underline;
+      }
