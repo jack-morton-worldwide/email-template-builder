@@ -781,6 +781,10 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
+gulp-mc-inliner@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/gulp-mc-inliner/-/gulp-mc-inliner-0.0.4.tgz#254d6faf1a59b7e8410c75ac995a5c1b014d4956"
+
 gulp-nunjucks-render@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/gulp-nunjucks-render/-/gulp-nunjucks-render-2.2.1.tgz#371c6acafe94ba9d69ce5a5fc43c1523863b10f0"

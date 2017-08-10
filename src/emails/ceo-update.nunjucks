@@ -1,6 +1,8 @@
 {% extends "base.nunjucks" %}
 
+
 {% block title %}CEO update{% endblock %}
+
 
 {% set header = {
   imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/39ee7b61-df60-4579-b136-28f5537f1539.jpg',
@@ -10,13 +12,24 @@
   width: '600'
 } %}
 
+
 {% block styles %}
 {% include "partials/preheader/preheader.css" %}
 
 {% include "partials/header/header.css" %}
+
+{% include "partials/text/full-width/full-width.css" %}
+
+{% include "partials/text/image-right/image-right.css" %}
 {% endblock %}
+
 
 {% block content %}
 {% include "partials/preheader/preheader.html" %}
+
 {% include "partials/header/header.html" %}
+
+{% include "partials/text/full-width/full-width.html" %}
+
+{% include "partials/text/image-right/image-right.html" %}
 {% endblock %}
