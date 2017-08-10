@@ -1,3 +1,10 @@
 {% extends "base.nunjucks" %}
 
 {% block title %}CEO update{% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block content %}
+    <h1 class="title">Hello world!</h1>
+{% endblock %}

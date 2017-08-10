@@ -1,0 +1,32 @@
+a {
+  color: #ff5000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ol,ul {
+  font-family: arial,sans-serif;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  mso-line-height-rule: exactly;
+}
+
+ol ul,ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  mso-line-height-rule: exactly;
+}
+
+#bodyTable {
+  background-color: #ffffff;
+  height:100%;
+}
+
+#emailContainer td {
+  font-family: arial,helvetica,sans-serif;
+}

@@ -1,14 +1,3 @@
-<!doctype html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- disables iOS phone/address/calendar detection -->
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>CEO update | Jack Morton</title>
-
-    <style type="text/css">
       /*=======================
       Reset Styles
       http://templates.mailchimp.com/development/css/reset-styles/
@@ -99,17 +88,3 @@
       /*=======================
       User styles
       =======================*/
-
-
-      .title {
-        color: crimson;
-      }
-
-    </style>
-  </head>
-  <body bgcolor="white">
-
-    <h1 class="title">Hello world!</h1>
-
-  </body>
-</html>
