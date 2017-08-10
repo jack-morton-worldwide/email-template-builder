@@ -1,0 +1,16 @@
+      .header img {
+        background-color: #333d47;
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: bold;
+        height: {{header.height}}px;
+        line-height: 25px;
+        text-align: left;
+        width: {{header.width}}px;
+      }
+
+      .header .text{
+        color: #ff5000;
+        font-weight: bold;
+        font-size: 20px;
+      }

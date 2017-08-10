@@ -5,7 +5,7 @@
     <!-- disables iOS phone/address/calendar detection -->
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>CEO update | Jack Morton</title>
 
     <style type="text/css">
@@ -100,16 +100,141 @@
       User styles
       =======================*/
 
+      a {
+        color: #ff5000;
+        font-weight: bold;
+        text-decoration: underline;
+      }
 
-      .title {
-        color: crimson;
+      ol,ul {
+        font-family: arial,sans-serif;
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        mso-line-height-rule: exactly;
+      }
+
+      ol ul,ul ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        mso-line-height-rule: exactly;
+      }
+
+      #bodyTable {
+        background-color: #ffffff;
+        height:100%;
+      }
+
+      #emailContainer td {
+        font-family: arial,helvetica,sans-serif;
+      }
+
+      .text {
+        mso-line-height-rule: exactly;
+        -webkit-text-size-adjust: none;
+      }
+
+      .text--left {
+        text-align: left;
+      }
+
+      .text--center {
+        text-align: center;
+      }
+
+      .text--right {
+        text-align: right;
+      }
+
+      .horizontal-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .vertical-padding {
+        padding-top: 25px;
+      }
+      
+      .preheader {
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+
+      .preheader .text {
+        color: #333d47;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: right;
+      }
+
+      .preheader .text a {
+        color: #333d47;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+
+      .header img {
+        background-color: #333d47;
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: bold;
+        height: 200px;
+        line-height: 25px;
+        text-align: left;
+        width: 600px;
+      }
+
+      .header .text{
+        color: #ff5000;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
       }
 
     </style>
   </head>
-  <body bgcolor="white">
+  <body bgcolor="#ffffff">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
+      <tr>
+        <td align="center" valign="top" style="padding-bottom: 40px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="emailContainer">
+            <!-- Content begins -->
+            
+            <tr>
+              <td align="center" valign="top" class="preheader">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="text">
+                      <a target="_blank" href="*|ARCHIVE|*">View email in a browser</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="header">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top" class="image">
+                      <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/39ee7b61-df60-4579-b136-28f5537f1539.jpg" alt="CEO Update" border="0" width="600" height="200">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="headertext" mc:label="Header Text">
+                      Type header here<br>Arial / type 20px / leading 25px
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
-    <h1 class="title">Hello world!</h1>
-
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
