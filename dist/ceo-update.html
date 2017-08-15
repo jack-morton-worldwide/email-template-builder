@@ -194,7 +194,7 @@
         font-size: 20px;
       }
 
-      .full-width { }
+      .full-width-text { }
 
       .image-right .text {
         padding-right: 18px;
@@ -219,6 +219,8 @@
         padding-left: 120px;
         padding-right: 120px;
       }
+
+.full-width-image { }
 
     </style>
   </head>
@@ -259,7 +261,7 @@
             </tr>
 
             <tr mc:repeatable="content" mc:variant="full-width-text">
-              <td align="center" valign="top" class="full-width" style="border-collapse: collapse;">
+              <td align="center" valign="top" class="full-width-text" style="border-collapse: collapse;">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                   <tr>
                     <td align="center" valign="top" class="vertical-padding text text--left" mc:label="Full-Width Text" mc:edit="fullwidthtext" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
@@ -307,6 +309,18 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
                   <tr>
                     <td align="center" valign="top" class="text divider" mc:label="Divider" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;border-bottom-color: #d2d4d7;border-bottom-style: solid;border-bottom-width: 1px;padding-left: 120px;padding-right: 120px;"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr mc:repeatable="content" mc:variant="full-width-image">
+              <td align="center" valign="top" class="vertical-padding full-width-image" style="border-collapse: collapse;padding-top: 25px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                  <tr>
+                    <td align="center" valign="top" style="border-collapse: collapse;">
+                      <img src="http://via.placeholder.com/600x320/d2d4d7/333d47" alt="" width="600" height="320" style="width: 600px;height: 320px;border: 0 none;display: block;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" mc:label="full-width-image" mc:edit="fullwidthimage">
+                    </td>
                   </tr>
                 </table>
               </td>

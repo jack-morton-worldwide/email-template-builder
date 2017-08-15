@@ -25,6 +25,8 @@
 {% include "partials/text/image-left/image-left.css" %}
 
 {% include "partials/divider/divider.css" %}
+
+{% include "partials/images/full-width/full-width.css" %}
 {% endblock %}
 
 
@@ -40,4 +42,6 @@
 {% include "partials/text/image-left/image-left.html" %}
 
 {% include "partials/divider/divider.html" %}
+
+{% include "partials/images/full-width/full-width.html" %}
 {% endblock %}
