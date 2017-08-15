@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
+    "build:watch": "gulp",
     "dev": "http-server ./dist"
   },
   "devDependencies": {

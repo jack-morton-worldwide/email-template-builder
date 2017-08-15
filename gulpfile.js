@@ -2,13 +2,20 @@ const gulp = require('gulp');
 const inliner = require('gulp-mc-inliner');
 const nunjucksRender = require('gulp-nunjucks-render');
 
-const config = require('./mailchimp.json');
+
+const env = require('./mailchimp.json');
 
 gulp.task('build', () => {
-  return gulp.src('src/emails/**/*.+(html|nunjucks)')
+  return gulp.src('src/emails/**/*.+(css|html|nunjucks)')
              .pipe(nunjucksRender({
                  path: ['src/components'],
                }))
-             .pipe(inliner(config.KEY))
+             .pipe(inliner(env.KEY))
              .pipe(gulp.dest('dist'));
 })
+
+gulp.task('watch', () => {
+  gulp.watch('src/**/*.+(css|html|nunjucks)', ['build']);
+})
+
+gulp.task('default', ['build', 'watch']);
