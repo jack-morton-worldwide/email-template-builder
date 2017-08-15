@@ -52,4 +52,6 @@
 {% include "partials/images/three-up/three-up.html" %}
 
 {% include "partials/footers/contact-josh-html.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}
