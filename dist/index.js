@@ -3,24 +3,45 @@ const Template = (title, filename) => Object.assign({}, { title, filename });
 const templates = [
   Template('CEO update', 'ceo-update.html'),
   Template('CCO update', 'cco-update.html'),
+  Template('CFO/COO update', 'cfo-coo-update.html'),
 ];
 
-const NavItem = ({ title, filename }) => {
+const Iframe = () => {
+  const node = document.querySelector('iframe');
+  
+  return Object.assign(
+    {},
+    {
+      render: filename => {
+        node.setAttribute('name', Date.now());
+        node.setAttribute('src', `templates/${filename}?time=${Date.now()}`);
+      },
+    },
+  );
+};
+
+const NavItem = ({ title, index, selected = false, handleClick}) => {
   const node = document.createElement('button');
   
   return Object.assign(
     {},
     {
       render: () => {
-        node.setAttribute('data-filename', filename);
+        node.setAttribute('data-index', index);
         node.innerHTML = title;
+        node.addEventListener('click', () => handleClick(index));
+        
+        if (selected) {
+          node.setAttribute('class', 'selected');
+        } 
+        
         return node;
       },
     },
   );
 };
 
-const Nav = () => {
+const Nav = ({ handleClick }) => {
   const node = document.querySelector('nav');
   
   let navItems = [];
@@ -28,11 +49,13 @@ const Nav = () => {
   return Object.assign(
     {},
     {
-      render: () => {
+      render: ({ currentIndex }) => {
         node.innerHTML = '';
         
-        navItems = templates.map((template) => {
-          const templateNode = NavItem(template);
+        navItems = templates.map((template, index) => {
+          const { title } = template;
+          const selected = index === currentIndex;
+          const templateNode = NavItem({ title, index, selected, handleClick });
           return templateNode.render();
         });
         
@@ -44,24 +67,37 @@ const Nav = () => {
   );
 };
 
-const App = () => {
-  const nav = Nav();
-  
+const App = () => {  
   let state = {
-    currentTemplate: null,
+    currentIndex: 0,
   };
+    
+  const render = () => {
+    const { currentIndex } = state;
+    const currentTemplate = templates[currentIndex];
+    const { filename } = currentTemplate;
+    
+    nav.render({ currentIndex });
+    iframe.render(filename);
+  }
+  
+  const getCurrentIndex = () => state.currentIndex;
+
+  const setCurrentIndex = (currentIndex) => {
+    const newState = { ...state, currentIndex };
+    state = newState;
+    render();
+  };
+  
+  const nav = Nav({ handleClick: setCurrentIndex });
+  const iframe = Iframe();
   
   return Object.assign(
     {},
     { 
-      getCurrentTemplate: () => state.currentTemplate,
-      setCurrentTemplate: (currentTemplate) => {
-        const newState = { ...state, currentTemplate };
-        state = newState;
-      },
-      render: () => {
-        nav.render();
-      },
+      getCurrentIndex,
+      setCurrentIndex,
+      render,
     }
   );
 };

@@ -38,8 +38,9 @@ header h1 span {
 
 nav {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 nav button {
@@ -50,10 +51,11 @@ nav button {
   font-family: inherit;
   font-size: 1em;
   padding: 0.5em 0.25em;
+  height: fit-content;
   width: 9em;
 }
 
-nav button--selected,
+nav button.selected,
 nav button:hover {
   background-color: #ff5000;
   color: white;
