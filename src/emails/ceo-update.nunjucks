@@ -21,6 +21,8 @@
 {% include "partials/text/full-width/full-width.css" %}
 
 {% include "partials/text/image-right/image-right.css" %}
+
+{% include "partials/text/image-left/image-left.css" %}
 {% endblock %}
 
 
@@ -32,4 +34,6 @@
 {% include "partials/text/full-width/full-width.html" %}
 
 {% include "partials/text/image-right/image-right.html" %}
+
+{% include "partials/text/image-left/image-left.html" %}
 {% endblock %}
