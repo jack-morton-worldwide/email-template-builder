@@ -1,0 +1,7 @@
+      .contact-josh {
+        padding-top: 75px;
+      }
+
+{% include "partials/footers/hear-from-you/hear-from-you.css" %}
+
+{% include "partials/footers/social/social.css" %}

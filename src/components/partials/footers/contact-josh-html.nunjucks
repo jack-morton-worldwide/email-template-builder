@@ -1,0 +1,11 @@
+            <tr>
+              <td align="center" valign="top" class="contact-josh">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="footer">
+                  <tr>
+{% include "partials/footers/hear-from-you/hear-from-you.html" %}
+
+{% include "partials/footers/social/social.html" %}
+                  </tr>
+                </table>
+              </td>
+            </tr>

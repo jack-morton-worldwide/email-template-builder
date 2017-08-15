@@ -29,6 +29,8 @@
 {% include "partials/images/full-width/full-width.css" %}
 
 {% include "partials/images/three-up/three-up.css" %}
+
+{% include "partials/footers/contact-josh-css.nunjucks" %}
 {% endblock %}
 
 
@@ -48,4 +50,6 @@
 {% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/images/three-up/three-up.html" %}
+
+{% include "partials/footers/contact-josh-html.nunjucks" %}
 {% endblock %}
