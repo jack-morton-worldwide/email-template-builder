@@ -17,14 +17,18 @@
   </head>
   <body bgcolor="#ffffff">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
-      <tr>
-        <td align="center" valign="top" style="padding-bottom: 40px;">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="emailContainer">
-            <!-- Content begins -->
-            {% block content %}{% endblock %}
-          </table>
-        </td>
-      </tr>
+      <tbody>
+        <tr>
+          <td align="center" valign="top" style="padding-bottom: 40px;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="emailContainer">
+              <tbody>
+                <!-- Content begins -->
+                {% block content %}{% endblock %}
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
