@@ -220,7 +220,23 @@
         padding-right: 120px;
       }
 
-.full-width-image { }
+      .full-width-image { }
+
+      .three-up-image { }
+
+      .three-up-image .container {
+        padding-right: 18px;
+        width: 188px;
+      }
+
+      .three-up-image .container--last {
+        padding-right: 0;
+      }
+
+      .three-up-image .container .image img {
+        height: 200px;
+        width: 188px;
+      }
 
     </style>
   </head>
@@ -320,6 +336,62 @@
                   <tr>
                     <td align="center" valign="top" style="border-collapse: collapse;">
                       <img src="http://via.placeholder.com/600x320/d2d4d7/333d47" alt="" width="600" height="320" style="width: 600px;height: 320px;border: 0 none;display: block;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" mc:label="full-width-image" mc:edit="fullwidthimage">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr mc:repeatable="content" mc:variant="three-up-image">
+              <td align="center" valign="top" class="vertical-padding three-up-image" style="border-collapse: collapse;padding-top: 25px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                  <tr>
+                    <td align="center" valign="top" class="container" style="border-collapse: collapse;padding-right: 18px;width: 188px;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <tr>
+                          <td align="center" valign="top" class="image" style="border-collapse: collapse;">
+                            <img src="http://via.placeholder.com/188x200/d2d4d7/333d47" alt="" width="188" height="200" mc:label="Three-Up Image One" mc:edit="threeupimageone" style="border: 0 none;display: block;height: 200px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 188px;">
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding text text--left description" mc:label="Three-Up Description One" mc:edit="threeupdescriptionone" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                            <strong>Text left image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    
+                    <td align="center" valign="top" class="container" style="border-collapse: collapse;padding-right: 18px;width: 188px;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <tr>
+                          <td align="center" valign="top" class="image" style="border-collapse: collapse;">
+                            <img src="http://via.placeholder.com/188x200/d2d4d7/333d47" alt="" width="188" height="200" mc:label="Three-Up Image Two" mc:edit="threeupimagetwo" style="border: 0 none;display: block;height: 200px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 188px;">
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding text text--left description" mc:label="Three-Up Description Two" mc:edit="threeupdescriptiontwo" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                            <strong>Text center image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    
+                    <td align="center" valign="top" class="container container--last" style="border-collapse: collapse;padding-right: 0;width: 188px;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                        <tr>
+                          <td align="center" valign="top" class="image" style="border-collapse: collapse;">
+                            <img src="http://via.placeholder.com/188x200/d2d4d7/333d47" alt="" width="188" height="200" mc:label="Three-Up Image Three" mc:edit="threeupimagethree" style="border: 0 none;display: block;height: 200px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 188px;">
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding text text--left description" mc:label="Three-Up Description Three" mc:edit="threeupdescriptionthree" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                            <strong>Text right image</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim.
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>

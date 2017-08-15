@@ -27,6 +27,8 @@
 {% include "partials/divider/divider.css" %}
 
 {% include "partials/images/full-width/full-width.css" %}
+
+{% include "partials/images/three-up/three-up.css" %}
 {% endblock %}
 
 
@@ -44,4 +46,6 @@
 {% include "partials/divider/divider.html" %}
 
 {% include "partials/images/full-width/full-width.html" %}
+
+{% include "partials/images/three-up/three-up.html" %}
 {% endblock %}
