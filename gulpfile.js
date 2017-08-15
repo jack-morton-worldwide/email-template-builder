@@ -11,7 +11,7 @@ gulp.task('build', () => {
                  path: ['src/components'],
                }))
              .pipe(inliner(env.KEY))
-             .pipe(gulp.dest('dist'));
+             .pipe(gulp.dest('dist/templates'));
 })
 
 gulp.task('watch', () => {

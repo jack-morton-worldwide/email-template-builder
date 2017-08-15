@@ -1,0 +1,57 @@
+{% extends "base.nunjucks" %}
+
+
+{% block title %}CCO update{% endblock %}
+
+
+{% set header = {
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/39ee7b61-df60-4579-b136-28f5537f1539.jpg',
+  altText: 'CCO Update',
+  headline: 'Type header here\<br\>Arial / type 20px / leading 25px',
+  height: '200',
+  width: '600'
+} %}
+
+
+{% block styles %}
+{% include "partials/preheader/preheader.css" %}
+
+{% include "partials/header/header.css" %}
+
+{% include "partials/text/full-width/full-width.css" %}
+
+{% include "partials/text/image-right/image-right.css" %}
+
+{% include "partials/text/image-left/image-left.css" %}
+
+{% include "partials/divider/divider.css" %}
+
+{% include "partials/images/full-width/full-width.css" %}
+
+{% include "partials/images/three-up/three-up.css" %}
+
+{% include "partials/footers/contact-josh-css.nunjucks" %}
+{% endblock %}
+
+
+{% block content %}
+{% include "partials/preheader/preheader.html" %}
+
+{% include "partials/header/header.html" %}
+
+{% include "partials/text/full-width/full-width.html" %}
+
+{% include "partials/text/image-right/image-right.html" %}
+
+{% include "partials/text/image-left/image-left.html" %}
+
+{% include "partials/divider/divider.html" %}
+
+{% include "partials/images/full-width/full-width.html" %}
+
+{% include "partials/images/three-up/three-up.html" %}
+
+{% include "partials/footers/contact-josh-html.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.html" %}
+{% endblock %}
