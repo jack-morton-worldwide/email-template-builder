@@ -14,7 +14,7 @@
     "eslint-config-airbnb-base": "^11.3.1",
     "eslint-plugin-import": "^2.7.0",
     "gulp": "^3.9.1",
-    "gulp-mc-inliner": "git+https://github.com/jack-morton-worldwide/gulp-mc-inliner",
+    "gulp-mc-inliner": "git+https://github.com/derekborland/gulp-mc-inliner",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-sass": "^3.1.0",
     "http-server": "^0.10.0"
