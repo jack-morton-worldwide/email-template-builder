@@ -18,9 +18,11 @@
 
 {% include "partials/header/header.css" %}
 
+{% include "partials/section-header/section-header.css" %}
+
 {% include "standard-css.nunjucks" %}
 
-{% include "partials/footers/contact-josh-css.nunjucks" %}
+{% include "partials/footers/contact-css.nunjucks" %}
 {% endblock %}
 
 
@@ -29,10 +31,13 @@
 
 {% include "partials/header/header.html" %}
 
+{% set text = "Type header here\<br\>Arial / type 20px / leading 25px" %}
+{% include "partials/section-header/section-header.html" %}
+
 {% include "standard-html.nunjucks" %}
 
 {% set contactEmail = "bill_davies@jackmorton.com" %}
-{% include "partials/footers/contact-josh-html.nunjucks" %}
+{% include "partials/footers/contact-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}

@@ -1,1 +1,4 @@
-      .full-width-image { }
+      .full-width-image {
+        height: 320px;
+        width: 600px;
+      }

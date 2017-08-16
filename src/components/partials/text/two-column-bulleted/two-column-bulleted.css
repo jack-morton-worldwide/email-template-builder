@@ -1,0 +1,6 @@
+      .two-column-bulleted-text { }
+      
+      .two-column-bulleted-text__column {
+        margin-right: 20px;
+        width: 290px;
+      }

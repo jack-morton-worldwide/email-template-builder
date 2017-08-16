@@ -1,6 +1,6 @@
                 <tr>
-                  <td align="center" valign="top" class="contact-josh">
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="footer">
+                  <td align="center" valign="top" class="contact">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tbody>
                         <tr>
 {% include "partials/footers/hear-from-you/hear-from-you.html" %}

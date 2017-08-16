@@ -6,6 +6,8 @@
 
 {% include "partials/text/image-left/image-left.css" %}
 
+{% include "partials/text/bulleted/bulleted.css" %}
+
 {% include "partials/divider/divider.css" %}
 
 {% include "partials/images/full-width/full-width.css" %}
