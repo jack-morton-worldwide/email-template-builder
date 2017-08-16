@@ -1,12 +1,12 @@
 {% extends "base.nunjucks" %}
 
 
-{% block title %}CCO update{% endblock %}
+{% block title %}Blank template{% endblock %}
 
 
 {% set header = {
-  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/fdb7fe6c-153c-4309-87ae-dcc45a24a8a0.png',
-  altText: 'CCO Update',
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/07ed1194-1d51-4131-a3c3-ca2c1fff88f7.jpg',
+  altText: 'Blank template',
   headline: 'Type header here\<br\>Arial / type 20px / leading 25px',
   height: '200',
   width: '600'
@@ -55,7 +55,7 @@
 
 {% include "partials/images/three-up/three-up.html" %}
 
-{% set contactEmail = "bruce_henderson@jackmorton.com" %}
+{% set contactEmail = "josh_mccall@jackmorton.com" %}
 {% include "partials/footers/contact-josh-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}

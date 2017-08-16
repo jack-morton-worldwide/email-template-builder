@@ -1,0 +1,6 @@
+.two-column-text { }
+
+.two-column-text__column {
+  padding-right: 20px;
+  width: 290px;
+}

@@ -4,6 +4,7 @@ const templates = [
   Template('CEO update', 'ceo-update.html'),
   Template('CCO update', 'cco-update.html'),
   Template('CFO/COO update', 'cfo-coo-update.html'),
+  Template('Blank', 'blank.html'),
 ];
 
 const Iframe = () => {
