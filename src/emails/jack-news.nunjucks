@@ -21,7 +21,7 @@
 
 {% include "partials/section-header/section-header.css" %}
 
-{% include "partials/text/bulleted/bulleted.css" %}
+{% include "partials/text/two-column-bulleted/two-column-bulleted.css" %}
 
 {% endblock %}
 
@@ -38,6 +38,6 @@
 {% set text = 'Global press' %}
 {% include "partials/section-header/section-header.html" %}
 
-{% include "partials/text/bulleted/bulleted.html" %}
+{% include "partials/text/two-column-bulleted/two-column-bulleted.html" %}
 
 {% endblock %}
