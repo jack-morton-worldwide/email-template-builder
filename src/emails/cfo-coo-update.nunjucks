@@ -18,19 +18,7 @@
 
 {% include "partials/header/header.css" %}
 
-{% include "partials/text/full-width/full-width.css" %}
-
-{% include "partials/text/two-column/two-column.css" %}
-
-{% include "partials/text/image-right/image-right.css" %}
-
-{% include "partials/text/image-left/image-left.css" %}
-
-{% include "partials/divider/divider.css" %}
-
-{% include "partials/images/full-width/full-width.css" %}
-
-{% include "partials/images/three-up/three-up.css" %}
+{% include "standard-css.nunjucks" %}
 
 {% include "partials/footers/contact-josh-css.nunjucks" %}
 {% endblock %}
@@ -41,19 +29,7 @@
 
 {% include "partials/header/header.html" %}
 
-{% include "partials/text/full-width/full-width.html" %}
-
-{% include "partials/text/two-column/two-column.html" %}
-
-{% include "partials/text/image-right/image-right.html" %}
-
-{% include "partials/text/image-left/image-left.html" %}
-
-{% include "partials/divider/divider.html" %}
-
-{% include "partials/images/full-width/full-width.html" %}
-
-{% include "partials/images/three-up/three-up.html" %}
+{% include "standard-html.nunjucks" %}
 
 {% set contactEmail = "bill_davies@jackmorton.com" %}
 {% include "partials/footers/contact-josh-html.nunjucks" %}
