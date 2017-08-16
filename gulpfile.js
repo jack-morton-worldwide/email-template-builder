@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const inliner = require('gulp-mc-inliner');
 const nunjucksRender = require('gulp-nunjucks-render');
 
-
 const env = require('./mailchimp.json');
 
 gulp.task('build', () => {

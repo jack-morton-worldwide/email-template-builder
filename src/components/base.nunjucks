@@ -11,8 +11,7 @@
     <style type="text/css">
 {% include "partials/_reset.css" %}
 {% include "partials/_base.css" %}
-      {% block styles %}
-      {% endblock %}
+      {% block styles %}{% endblock %}
     </style>
   </head>
   <body bgcolor="#ffffff">
