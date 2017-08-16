@@ -25,6 +25,8 @@
 
 {% include "partials/images/three-up/three-up.css" %}
 
+{% include "partials/footers/contact-css.nunjucks" %}
+
 {% include "partials/footers/brand-marketing/brand-marketing.css" %}
 {% endblock %}
 
@@ -54,4 +56,8 @@
 {% include "partials/images/three-up/three-up.html" %}
 
 {% include "partials/footers/brand-marketing/brand-marketing.html" %}
+
+{% set contactEmail = "experience@jackmorton.com" %}
+{% set variant = "brand-marketing" %}
+{% include "partials/footers/contact-html.nunjucks" %}
 {% endblock %}

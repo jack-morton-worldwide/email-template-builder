@@ -21,7 +21,7 @@
 
 {% include "standard-css.nunjucks" %}
 
-{% include "partials/footers/contact-josh-css.nunjucks" %}
+{% include "partials/footers/contact-css.nunjucks" %}
 {% endblock %}
 
 
@@ -36,7 +36,7 @@
 {% include "standard-html.nunjucks" %}
 
 {% set contactEmail = "josh_mccall@jackmorton.com" %}
-{% include "partials/footers/contact-josh-html.nunjucks" %}
+{% include "partials/footers/contact-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}
