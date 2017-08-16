@@ -15,11 +15,29 @@
 
 {% include "partials/header/header.css" %}
 
+{% include "partials/images/full-width/full-width.css" %}
+
+{% include "partials/text/full-width/full-width.css" %}
+
+{% include "partials/section-header/section-header.css" %}
+
+{% include "partials/text/bulleted/bulleted.css" %}
+
 {% endblock %}
 
 {% block content %}
 {% include "partials/preheader/preheader.html" %}
 
 {% include "partials/header/header.html" %}
+
+{% include "partials/images/full-width/full-width.html" %}
+
+{% include "partials/text/full-width/full-width.html" %}
+
+{% set serial = 1 %}
+{% set text = 'Global press' %}
+{% include "partials/section-header/section-header.html" %}
+
+{% include "partials/text/bulleted/bulleted.html" %}
 
 {% endblock %}
