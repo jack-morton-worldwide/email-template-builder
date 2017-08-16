@@ -23,6 +23,9 @@
 
 {% include "partials/text/two-column-bulleted/two-column-bulleted.css" %}
 
+{% include "partials/images/three-up/three-up.css" %}
+
+{% include "partials/footers/brand-marketing/brand-marketing.css" %}
 {% endblock %}
 
 {% block content %}
@@ -30,14 +33,25 @@
 
 {% include "partials/header/header.html" %}
 
+{% set serial = 1 %}
 {% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/text/full-width/full-width.html" %}
 
-{% set serial = 1 %}
 {% set text = 'Global press' %}
 {% include "partials/section-header/section-header.html" %}
 
 {% include "partials/text/two-column-bulleted/two-column-bulleted.html" %}
 
+{% set serial = 2 %}
+{% set text = 'Brand news' %}
+{% include "partials/section-header/section-header.html" %}
+
+{% include "partials/images/full-width/full-width.html" %}
+
+{% include "partials/text/full-width/full-width.html" %}
+
+{% include "partials/images/three-up/three-up.html" %}
+
+{% include "partials/footers/brand-marketing/brand-marketing.html" %}
 {% endblock %}
