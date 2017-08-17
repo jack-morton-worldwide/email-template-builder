@@ -1,15 +1,15 @@
-.brand-marketing-footer { 
-  padding-top: 50px;
-}
+      .brand-marketing-footer { 
+        padding-top: 50px;
+      }
 
-.brand-marketing-footer__title {
-    font-size: 14px;
-    font-weight: bold;
-}
+      .brand-marketing-footer__title {
+          font-size: 14px;
+          font-weight: bold;
+      }
 
-.brand-marketing-footer__column {
-  font-size: 14px;
-  line-height: 18px;
-  padding-right: 20px;
-  width: 290px;
-}
+      .brand-marketing-footer__column {
+        font-size: 14px;
+        line-height: 18px;
+        padding-right: 20px;
+        width: 290px;
+      }

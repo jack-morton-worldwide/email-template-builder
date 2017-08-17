@@ -1,0 +1,105 @@
+{% extends "base.nunjucks" %}
+
+{% block title %}Jack News{% endblock %}
+
+
+{% set header = {
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/de52227f-67cf-444e-9cf1-e745d9a58fe0.png',
+  altText: 'Jack Insider | The best of our agency delivered monthly',
+  height: '174',
+  width: '640'
+} %}
+
+
+{% set backgroundColor = '#e7e8e9' %}
+{% block backgroundPolor %}{{backgroundColor}}{% endblock %}
+{% block width %}640{% endblock %}
+
+
+{% block styles %}
+{% include "partials/_reset.css" %}
+
+{% include "partials/_base.css" %}
+      
+      .content {
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+{% include "partials/preheader/preheader.css" %}
+
+{% include "partials/header/header.css" %}
+
+{% include "partials/images/full-width/full-width.css" %}
+
+{% include "partials/text/full-width/full-width.css" %}
+
+{% include "partials/section-header/section-header.css" %}
+
+{% include "partials/jack-insider/wins/wins.css" %}
+
+{% include "partials/jack-insider/features/features.css" %}
+
+{% include "partials/jack-insider/more/more.css" %}
+
+{% include "partials/jack-insider/social/social.css" %}
+
+{% include "partials/footers/follow-us-css.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.css" %}
+{% endblock %}
+
+
+{% block header %}
+{% include "partials/preheader/preheader.html" %}
+
+{% include "partials/header/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+{% set serial = 1 %}
+{% include "partials/images/full-width/full-width.html" %}
+
+{% include "partials/text/full-width/full-width.html" %}
+
+{% include "partials/section-header/section-header.html" %}
+
+{% include "partials/jack-insider/wins/wins.html" %}
+
+{% set serial = 2 %}
+{% set feature = 'work' %}
+{% set text = 'Featured work' %}
+{% include "partials/section-header/section-header.html" %}
+{% include "partials/jack-insider/features/features.html" %}
+{% include "partials/jack-insider/more/more.html" %}
+
+{% set serial = 3 %}
+{% set feature = 'press' %}
+{% set text = 'Press' %}
+{% include "partials/section-header/section-header.html" %}
+{% include "partials/jack-insider/features/features.html" %}
+{% include "partials/jack-insider/more/more.html" %}
+
+{% set serial = 4 %}
+{% set feature = 'resources' %}
+{% set text = 'Resources' %}
+{% include "partials/section-header/section-header.html" %}
+{% include "partials/jack-insider/features/features.html" %}
+{% include "partials/jack-insider/more/more.html" %}
+
+{% set serial = 5 %}
+{% set feature = 'social' %}
+{% set text = 'Best of social' %}
+{% include "partials/section-header/section-header.html" %}
+{% include "partials/jack-insider/social/social.html" %}
+
+
+{% endblock %}
+
+{% block footer %}
+{% include "partials/footers/follow-us-html.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.html" %}
+{% endblock %}

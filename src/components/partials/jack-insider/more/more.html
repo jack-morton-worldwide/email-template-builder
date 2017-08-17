@@ -1,0 +1,31 @@
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="vertical-padding more">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                {% if feature == 'work' or feature == 'press' %}
+                                <tr>
+                                  <td align="center" valign="top" class="text text--left more__title">
+                                    <strong>More {{feature}}</strong>
+                                  </td>
+                                </tr>
+                                {% endif %}
+                                {% include "partials/jack-insider/list/list.html" %}
+                                {% if feature == 'work' or feature == 'press' %}
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--right more__link">
+                                  {% if feature == 'work' %}
+                                    <a href="https://orangegrove.jackmorton.com/marketing/case-studies/" target="_blank">
+                                      See more work on Orange Grove
+                                    </a>
+                                  {% elif feature == 'press' %}
+                                    <a href="http://www.jackmorton.com/news-coverage/" target="_blank">
+                                      Read more press
+                                    </a>
+                                  {% endif %}
+                                  </td>
+                                </tr>
+                                {% endif %}
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>

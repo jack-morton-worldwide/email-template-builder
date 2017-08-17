@@ -1,5 +1,5 @@
       .contact {
-        padding-top: 75px;
+        padding-top: 25px;
       }      
 
 {% include "partials/footers/hear-from-you/hear-from-you.css" %}

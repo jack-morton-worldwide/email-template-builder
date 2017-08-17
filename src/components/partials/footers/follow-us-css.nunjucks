@@ -1,0 +1,5 @@
+      .footer {
+        padding-bottom: 25px;
+      }      
+
+{% include "partials/footers/social/social.css" %}

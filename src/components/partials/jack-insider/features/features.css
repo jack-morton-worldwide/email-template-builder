@@ -1,0 +1,12 @@
+      .features__item {
+        padding-right: 10px;
+      }
+      
+      .features__image img {
+        height: 150px;
+        width: 295px;
+      }
+      
+      .features__title {
+        padding-top: 10px;
+      }

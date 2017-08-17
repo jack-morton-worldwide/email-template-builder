@@ -12,7 +12,16 @@
 } %}
 
 
+{% set backgroundColor = '#ffffff' %}
+{% block backgroundColor %}{{backgroundColor}}{% endblock %}
+{% block width %}600{% endblock %}
+
+
 {% block styles %}
+{% include "partials/_reset.css" %}
+
+{% include "partials/_base.css" %}
+
 {% include "partials/preheader/preheader.css" %}
 
 {% include "partials/header/header.css" %}
@@ -21,7 +30,9 @@
 
 {% include "standard-css.nunjucks" %}
 
-{% include "partials/footers/contact-css.nunjucks" %}
+{% include "partials/footers/follow-us-css.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.css" %}
 {% endblock %}
 
 
@@ -30,13 +41,15 @@
 
 {% include "partials/header/header.html" %}
 
-{% set text = "Type header here\<br\>Arial / type 20px / leading 25px" %}
+{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}
 {% include "partials/section-header/section-header.html" %}
 
 {% include "standard-html.nunjucks" %}
+{% endblock %}
 
-{% set contactEmail = "josh_mccall@jackmorton.com" %}
-{% include "partials/footers/contact-html.nunjucks" %}
+
+{% block footer %}
+{% include "partials/footers/follow-us-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}

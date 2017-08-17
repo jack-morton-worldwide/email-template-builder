@@ -23,8 +23,13 @@
       }
 
       #bodyTable {
-        background-color: #ffffff;
+        background-color: {{backgroundColor}};
         height: 100%;
+      }
+      
+      .content {
+        background-color: #ffffff;
+        padding-bottom: 40px;
       }
 
       .text {

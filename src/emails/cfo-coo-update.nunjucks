@@ -7,13 +7,21 @@
 {% set header = {
   imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/0f370aeb-fc9f-4ee6-a462-385749a2239a.png',
   altText: 'CFO/COO Update',
-  headline: 'Type header here\<br\>Arial / type 20px / leading 25px',
   height: '200',
   width: '600'
 } %}
 
 
+{% set backgroundColor = '#ffffff' %}
+{% block backgroundColor %}{{backgroundColor}}{% endblock %}
+{% block width %}600{% endblock %}
+
+
 {% block styles %}
+{% include "partials/_reset.css" %}
+
+{% include "partials/_base.css" %}
+
 {% include "partials/preheader/preheader.css" %}
 
 {% include "partials/header/header.css" %}
@@ -23,6 +31,8 @@
 {% include "standard-css.nunjucks" %}
 
 {% include "partials/footers/contact-css.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.css" %}
 {% endblock %}
 
 
@@ -31,11 +41,14 @@
 
 {% include "partials/header/header.html" %}
 
-{% set text = "Type header here\<br\>Arial / type 20px / leading 25px" %}
+{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}
 {% include "partials/section-header/section-header.html" %}
 
 {% include "standard-html.nunjucks" %}
+{% endblock %}
 
+
+{% block footer %}
 {% set contactEmail = "bill_davies@jackmorton.com" %}
 {% include "partials/footers/contact-html.nunjucks" %}
 

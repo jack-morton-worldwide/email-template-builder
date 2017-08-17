@@ -1,0 +1,17 @@
+                                <tr mc:repeatable>
+                                  <td align="center" valign="top" class="text text--left list" mc:label="List {{serial}}" mc:edit="list{{serial}}">
+                                    <ul>
+                                      <li>
+                                      {% if feature == 'work' %}
+                                        Jack [Office] created the <a href="#" taget="_blank">[Project Name]</a> for [Client Name].
+                                      {% elif feature == 'press' %}
+                                        [Subject] was featured in <a href="#" taget="_blank">[Outlet Name]</a> for [Interesting Thing].
+                                      {% elif feature == 'resources' %}
+                                        <a href="#" target="_blank">[Resource Name]</a> [Resource Description].
+                                      {% elif feature == 'social' %}
+                                        [Information] <a href="#" target="_blank">[Link]</a>.
+                                      {% endif %}
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>

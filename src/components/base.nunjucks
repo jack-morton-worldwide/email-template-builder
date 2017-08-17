@@ -9,20 +9,29 @@
     <title>{% block title %}{% endblock %} | Jack Morton</title>
 
     <style type="text/css">
-{% include "partials/_reset.css" %}
-{% include "partials/_base.css" %}
       {% block styles %}{% endblock %}
     </style>
   </head>
-  <body bgcolor="#ffffff">
+  <body bgcolor={% block backgroundColor %}{% endblock %}>
     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable">
       <tbody>
         <tr>
-          <td align="center" valign="top" style="padding-bottom: 40px;">
-            <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="emailContainer">
+          <td align="center" valign="top">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width={% block width %}{% endblock %} id="emailContainer">
               <tbody>
                 <!-- Content begins -->
-                {% block content %}{% endblock %}
+                {% block header %}{% endblock %}
+                <tr>
+                  <td align="center" valign="top" class="content">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        {% block content %}{% endblock %}
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                {% block footer %}{% endblock %}
+                <!-- Content ends -->
               </tbody>
             </table>
           </td>
