@@ -54,6 +54,7 @@ nav button {
   height: fit-content;
   margin: 0.5em;
   padding: 0.5em 0.25em;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   width: 9em;
 }
 
