@@ -6,6 +6,7 @@ const templates = [
   Template('CFO/COO update', 'cfo-coo-update.html'),
   Template('Blank', 'blank.html'),
   Template('Jack news', 'jack-news.html'),
+  Template('Jack insider', 'jack-insider.html'),
 ];
 
 const Iframe = () => {

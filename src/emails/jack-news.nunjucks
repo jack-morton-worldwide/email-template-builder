@@ -1,16 +1,31 @@
 {% extends "base.nunjucks" %}
 
+
 {% block title %}Jack News{% endblock %}
+
 
 {% set header = {
   imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/d77ff43b-15c3-4227-81d0-3a1d072586dc.jpg',
   altText: 'Jack news from your brand marketing team',
-  headline: 'Type header here\<br\>Arial / type 20px / leading 25px',
   height: '200',
   width: '600'
 } %}
 
+
+{% set backgroundColor = '#ffffff' %}
+{% block backgroundColor %}{{backgroundColor}}{% endblock %}
+{% block width %}600{% endblock %}
+
+
 {% block styles %}
+{% include "partials/_reset.css" %}
+
+{% include "partials/_base.css" %}
+
+      .content {
+        padding-top: 25px;
+      }
+
 {% include "partials/preheader/preheader.css" %}
 
 {% include "partials/header/header.css" %}
@@ -28,13 +43,19 @@
 {% include "partials/footers/contact-css.nunjucks" %}
 
 {% include "partials/footers/brand-marketing/brand-marketing.css" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.css" %}
 {% endblock %}
 
-{% block content %}
+
+{% block header %}
 {% include "partials/preheader/preheader.html" %}
 
 {% include "partials/header/header.html" %}
+{% endblock %}
 
+
+{% block content %}
 {% set serial = 1 %}
 {% include "partials/images/full-width/full-width.html" %}
 
@@ -56,8 +77,12 @@
 {% include "partials/images/three-up/three-up.html" %}
 
 {% include "partials/footers/brand-marketing/brand-marketing.html" %}
+{% endblock %}
 
+{% block footer %}
 {% set contactEmail = "experience@jackmorton.com" %}
 {% set variant = "brand-marketing" %}
 {% include "partials/footers/contact-html.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}

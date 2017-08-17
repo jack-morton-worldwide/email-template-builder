@@ -1,13 +1,20 @@
-      .social {
-        width: 170px;
+      .social-footer {
+        width: {{width}}px;
       }
       
-      .social_link {
-        padding-right: 8px;
+      .social-footer_follow-us, .social-footer_follow-us img {
+        width: 80px;
+      }
+      
+      .social-footer_link, .social-footer_link img {
         width: 20px;
       }
       
-      .social_link img {
+      .social-footer_follow-us img, .social-footer_link img {
         height: 20px;
-        width: 20px;
+      }
+      
+      
+      .social-footer_follow-us, .social-footer_link {
+        padding-right: 8px;
       }

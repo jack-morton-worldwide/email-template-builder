@@ -1,38 +1,44 @@
-                          <td align={{align}} valign="center" class="social">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <td align={{align}} valign="center" class="social-footer">
+                            <table border="0" cellpadding="0" cellspacing="0" width={{ 248 if follow else 170 }}>
                               <tbody>
                                 <tr>
-                                  <td align="center" valign="top" class="social_link">
+                                  {% if follow %}
+                                  <td align="center" valign="top" class="social-footer_follow-us">
+                                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/4128a027-fa14-4c8d-a559-8c42f4571126.png" width="80" height="20" border="0" alt="Follow us">
+                                  </td>
+                                  {% endif %}
+                                  
+                                  <td align="center" valign="top" class="social-footer_link">
                                     <a href="https://www.linkedin.com/company/jack-morton-worldwide" target="_blank">
                                       <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/be938083-7b64-497a-a738-277a33d4a547.png" width="20" height="20" border="0" alt="LinkedIn">
                                     </a>
                                   </td>
                                   
-                                  <td align="center" valign="top" class="social_link">
+                                  <td align="center" valign="top" class="social-footer_link">
                                     <a href="http://instagram.com/jackmorton" target="_blank">
                                       <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/bf150e2e-5af5-4c5a-8967-5c7e8e1ac91f.png" width="20" height="20" border="0" alt="Instagram">
                                     </a>
                                   </td>
                                   
-                                  <td align="center" valign="top" class="social_link">
+                                  <td align="center" valign="top" class="social-footer_link">
                                     <a href="http://twitter.com/jackmorton" target="_blank">
                                       <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/874ffe17-adc3-438c-a277-c44fe289e053.png" width="20" height="20" border="0" alt="Twitter">
                                     </a>
                                   </td>
                                   
-                                  <td align="center" valign="top" class="social_link">
+                                  <td align="center" valign="top" class="social-footer_link">
                                     <a href="http://www.facebook.com/jackmortonworldwide" target="_blank">
                                       <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/e207230f-0a14-4e64-931c-3d8c23d82d71.png" width="20" height="20" border="0" alt="Facebook">
                                     </a>
                                   </td>
                                   
-                                  <td align="center" valign="top" class="social_link">
+                                  <td align="center" valign="top" class="social-footer_link">
                                     <a href="http://vimeo.com/jackmortonww/videos" target="_blank">
                                       <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/83496e41-a820-4329-b358-c6e60ba41c31.png" width="20" height="20" border="0" alt="Vimeo">
                                     </a>
                                   </td>
                                   
-                                  <td align="center" valign="top" class="social_link">
+                                  <td align="center" valign="top" class="social-footer_link last">
                                     <a href="http://jackmorton.com" target="_blank">
                                       <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/ebd1c7c0-ba21-4128-b95a-6f7417601849.png" width="20" height="20" border="0" alt="Website">
                                     </a>

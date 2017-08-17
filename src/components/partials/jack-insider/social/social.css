@@ -1,0 +1,13 @@
+      .social__image .social__image img {
+        width: 194px;
+      }
+      
+      .social__image {
+        padding-right: 9px;
+      }
+      
+      .social__image img {
+        height: 194px;
+      }
+      
+      {% include "partials/jack-insider/list/list.css" %}

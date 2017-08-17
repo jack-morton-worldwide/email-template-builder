@@ -1,0 +1,954 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- disables iOS phone/address/calendar detection -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jack News | Jack Morton</title>
+
+    <style type="text/css">
+      
+      /*=======================
+      Reset Styles
+      http://templates.mailchimp.com/development/css/reset-styles/
+      =======================*/
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        border: 0 none;
+        display: block;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      a img {
+        border: 0 none;
+      }
+
+      .imageFix {
+        display: block;
+      }
+
+      table, td {
+        border-collapse: collapse;
+      }
+
+      #bodyTable {
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+      }
+
+
+
+      /*=======================
+      Client-specific overrides
+      http://templates.mailchimp.com/development/css/client-specific-styles/
+      =======================*/
+
+       /* Outlook Outlook.com / Hotmail .ExternalClass Class Override */
+       .ExternalClass {
+        width: 100%;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+
+      /* Outlook 2007 / 2010 / 2013 “Read in Browser” Link */
+      #outlook a {
+        padding: 0;
+      }
+
+      /* Outlook 2007 / 2010 / 2013 table Element Spacing */
+      table {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      /* Outlook 2007 / 2010 / 2013 Image resizing */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* OSX / iOS WebKit Text Size Adjustment */
+      body {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* Windows Mobile Windows Mobile Text Size Adjustment */
+      body {
+        -ms-text-size-adjust: 100%;
+      }
+
+
+
+      /*=======================
+      User styles
+      =======================*/
+
+
+      ol, ul {
+        font-family: arial,sans-serif;
+        font-size: 1em;
+        Margin: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 20px;
+        mso-line-height-rule: exactly;
+        mso-special-format: bullet;
+      }
+
+      ol ul, ul ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        mso-line-height-rule: exactly;
+      }
+
+      #bodyTable {
+        background-color: #e7e8e9;
+        height: 100%;
+      }
+      
+      .content {
+        background-color: #ffffff;
+        padding-bottom: 40px;
+      }
+
+      .text {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 25px;
+        mso-line-height-rule: exactly;
+        -webkit-text-size-adjust: none;
+      }
+
+      .text--left {
+        text-align: left;
+      }
+
+      .text--center {
+        text-align: center;
+      }
+
+      .text--right {
+        text-align: right;
+      }
+
+      .text a {
+        color: #ff5000;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      .horizontal-padding {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .vertical-padding {
+        padding-top: 25px;
+      }
+      
+      .last {
+        padding-right: 0 !important;
+      }
+      
+      .content {
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .preheader {
+        padding-top: 10px;
+        padding-bottom: 15px;
+      }
+
+      .preheader .text {
+        color: #333d47;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: right;
+      }
+
+      .preheader .text a {
+        color: #333d47;
+        font-weight: normal;
+        text-decoration: underline;
+      }
+
+      .header {
+        background-color: #ffffff;
+      }
+      
+      .header img {
+        background-color: #333d47;
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: bold;
+        height: 174px;
+        line-height: 25px;
+        text-align: left;
+        width: 640px;
+      }
+
+      .full-width-image {
+        height: 320px;
+        width: 600px;
+      }
+
+      .full-width-text { }
+
+      .section-header .text {
+        color: #ff5000;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .wins { }
+      
+      .wins__item {
+        padding-right: 9px;
+        width: 194px;
+      }
+      
+      .wins__image img {
+        height: 100px;
+        width: 194px;
+      }
+      
+      .wins__text {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .features__item {
+        padding-right: 10px;
+      }
+      
+      .features__image img {
+        height: 150px;
+        width: 295px;
+      }
+      
+      .features__title {
+        padding-top: 10px;
+      }
+
+            .list {
+        
+      }
+
+      .social__image .social__image img {
+        width: 194px;
+      }
+      
+      .social__image {
+        padding-right: 9px;
+      }
+      
+      .social__image img {
+        height: 194px;
+      }
+      
+            .list {
+        
+      }
+
+      .footer {
+        padding-bottom: 25px;
+      }      
+
+      .social-footer {
+        width: px;
+      }
+      
+      .social-footer_follow-us, .social-footer_follow-us img {
+        width: 80px;
+      }
+      
+      .social-footer_link, .social-footer_link img {
+        width: 20px;
+      }
+      
+      .social-footer_follow-us img, .social-footer_link img {
+        height: 20px;
+      }
+      
+      
+      .social-footer_follow-us, .social-footer_link {
+        padding-right: 8px;
+      }
+
+      .tracking-pixel {
+        padding-bottom: 40px;
+      }
+
+    </style>
+  </head>
+  <body bgcolor="" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;height: 100%;margin: 0;padding: 0;background-color: #e7e8e9;width: 100% !important;">
+      <tbody>
+        <tr>
+          <td align="center" valign="top" style="border-collapse: collapse;">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" id="emailContainer" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+              <tbody>
+                <!-- Content begins -->
+                
+                <tr>
+                  <td align="center" valign="top" class="preheader" style="border-collapse: collapse;padding-top: 10px;padding-bottom: 15px;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" class="text" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 10px;font-weight: normal;line-height: 15px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;color: #333d47;text-align: right;">
+                            <a target="_blank" href="*|ARCHIVE|*" style="color: #333d47;font-weight: normal;text-decoration: underline;">View email in a browser</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top" class="header" style="border-collapse: collapse;background-color: #ffffff;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" class="image" style="border-collapse: collapse;">
+                            <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/de52227f-67cf-444e-9cf1-e745d9a58fe0.png" alt="Jack Insider | The best of our agency delivered monthly" border="0" width="640" height="174" mc:label="Header Image" mc:edit="headerimage" style="border: 0 none;display: block;height: 174px;line-height: 25px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;background-color: #333d47;color: #ffffff;font-size: 32px;font-weight: bold;text-align: left;width: 640px;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" valign="top" class="content" style="border-collapse: collapse;background-color: #ffffff;padding-bottom: 40px;padding-top: 25px;padding-left: 20px;padding-right: 20px;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                      <tbody>
+                        
+
+                <tr mc:repeatable="content" mc:variant="full-width-image">
+                  <td align="center" valign="top" class="vertical-padding full-width-image" style="border-collapse: collapse;padding-top: 25px;height: 320px;width: 600px;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" style="border-collapse: collapse;">
+                            <img src="http://via.placeholder.com/600x320/d2d4d7/333d47" alt="" width="600" height="320" mc:label="Full Width Image" mc:edit="fullwidthimage1" style="border: 0 none;display: block;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr mc:repeatable="content" mc:variant="full-width-text">
+                  <td align="center" valign="top" class="full-width-text" style="border-collapse: collapse;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                      <tbody>
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding text text--left" mc:label="Full-Width Text" mc:edit="fullwidthtext1" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                            <strong>Full-width text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis tortor id metus rutrum, eu consequat purus dignissim. In egestas rutrum nisl, vitae imperdiet nibh. Duis in tincidunt ipsum. Vestibulum sagittis elementum sodales. Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.<br>
+                            <br>
+                            Quisque porttitor non mi nec scelerisque. Phasellus quis sem sed nibh ullamcorper consequat efficitur id nulla. Vivamus justo risus, maximus et dapibus eget, lacinia eu dolor. Sed vel tristique purus, ut hendrerit ligula. Phasellus quis ultrices magna. Vestibulum consequat tellus eu urna mattis, sed efficitur lacus eleifend. Pellentesque ultrices tortor ante, eget efficitur arcu semper at.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader1" mc:label="Section Header" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 24px;font-weight: bold;line-height: 30px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;color: #ff5000;">
+                                    
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="wins" style="border-collapse: collapse;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding wins__item" style="border-collapse: collapse;padding-top: 25px;padding-right: 9px;width: 194px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="wins__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/194x100/d2d4d7/333d47" alt="" width="194" height="100" mc:edit="winsimage11" mc:label="Wins Image 1" style="border: 0 none;display: block;height: 100px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 194px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="vertical-padding text text--left wins__text" mc:edit="winstext11" mc:label="Wins Text 1" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 14px;font-weight: normal;line-height: 20px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                                            Office: ################
+                                            Offering: ##############
+                                            Contact: ##############
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" valign="top" class="vertical-padding wins__item" style="border-collapse: collapse;padding-top: 25px;padding-right: 9px;width: 194px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="wins__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/194x100/d2d4d7/333d47" alt="" width="194" height="100" mc:edit="winsimage21" mc:label="Wins Image 2" style="border: 0 none;display: block;height: 100px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 194px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="vertical-padding text text--left wins__text" mc:edit="winstext21" mc:label="Wins Text 2" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 14px;font-weight: normal;line-height: 20px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                                            Office: ################
+                                            Offering: ##############
+                                            Contact: ##############
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" valign="top" class="vertical-padding wins__item last" style="border-collapse: collapse;padding-top: 25px;padding-right: 0 !important;width: 194px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="wins__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/194x100/d2d4d7/333d47" alt="" width="194" height="100" mc:edit="winsimage31" mc:label="Wins Image 3" style="border: 0 none;display: block;height: 100px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 194px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="vertical-padding text text--left wins__text" mc:edit="winstext31" mc:label="Wins Text 3" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 14px;font-weight: normal;line-height: 20px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
+                                            Office: ################
+                                            Offering: ##############
+                                            Contact: ##############
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader2" mc:label="Section Header" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 24px;font-weight: bold;line-height: 30px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;color: #ff5000;">
+                                    Featured work
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:repeatable="features">
+                          <td align="center" valign="top" class="vertical-padding features" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="features__item" style="border-collapse: collapse;padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage12" mc:label="Features Image 1" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle12" mc:label="Features Title 1" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Client: Project
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" valign="top" class="features__item last" style="border-collapse: collapse;padding-right: 0 !important;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage22" mc:label="Features Image 2" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle22" mc:label="Features Title 2" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Client: Project
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="vertical-padding more" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                
+                                <tr>
+                                  <td align="center" valign="top" class="text text--left more__title" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <strong>More work</strong>
+                                  </td>
+                                </tr>
+                                
+                                                                <tr mc:repeatable>
+                                  <td align="center" valign="top" class="text text--left list" mc:label="List 2" mc:edit="list2" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 20px;mso-line-height-rule: exactly;mso-special-format: bullet;">
+                                      <li>
+                                      
+                                        Jack [Office] created the <a href="#" taget="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">[Project Name]</a> for [Client Name].
+                                      
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--right more__link" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: right;padding-top: 25px;">
+                                  
+                                    <a href="https://orangegrove.jackmorton.com/marketing/case-studies/" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                      See more work on Orange Grove
+                                    </a>
+                                  
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader3" mc:label="Section Header" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 24px;font-weight: bold;line-height: 30px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;color: #ff5000;">
+                                    Press
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:repeatable="features">
+                          <td align="center" valign="top" class="vertical-padding features" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="features__item" style="border-collapse: collapse;padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage13" mc:label="Features Image 1" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle13" mc:label="Features Title 1" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Outlet: Headline
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" valign="top" class="features__item last" style="border-collapse: collapse;padding-right: 0 !important;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage23" mc:label="Features Image 2" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle23" mc:label="Features Title 2" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Outlet: Headline
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="vertical-padding more" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                
+                                <tr>
+                                  <td align="center" valign="top" class="text text--left more__title" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <strong>More press</strong>
+                                  </td>
+                                </tr>
+                                
+                                                                <tr mc:repeatable>
+                                  <td align="center" valign="top" class="text text--left list" mc:label="List 3" mc:edit="list3" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 20px;mso-line-height-rule: exactly;mso-special-format: bullet;">
+                                      <li>
+                                      
+                                        [Subject] was featured in <a href="#" taget="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">[Outlet Name]</a> for [Interesting Thing].
+                                      
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--right more__link" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: right;padding-top: 25px;">
+                                  
+                                    <a href="http://www.jackmorton.com/news-coverage/" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                      Read more press
+                                    </a>
+                                  
+                                  </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader4" mc:label="Section Header" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 24px;font-weight: bold;line-height: 30px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;color: #ff5000;">
+                                    Resources
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:repeatable="features">
+                          <td align="center" valign="top" class="vertical-padding features" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="features__item" style="border-collapse: collapse;padding-right: 10px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage14" mc:label="Features Image 1" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle14" mc:label="Features Title 1" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Resource name
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                  <td align="center" valign="top" class="features__item last" style="border-collapse: collapse;padding-right: 0 !important;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="features__image" style="border-collapse: collapse;">
+                                            <img src="http://via.placeholder.com/295x150/d2d4d7/333d47" alt="" width="295" height="150" mc:edit="featuresimage24" mc:label="Features Image 2" style="border: 0 none;display: block;height: 150px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 295px;">
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__title" mc:edit="featurestitle24" mc:label="Features Title 2" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 10px;">
+                                            <strong>
+                                              <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">
+                                                
+                                                  Resource name
+                                                
+                                              </a>
+                                            </strong>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td align="center" valign="top" class="text text--left features__description" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="vertical-padding more" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                
+                                                                <tr mc:repeatable>
+                                  <td align="center" valign="top" class="text text--left list" mc:label="List 4" mc:edit="list4" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 20px;mso-line-height-rule: exactly;mso-special-format: bullet;">
+                                      <li>
+                                      
+                                        <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">[Resource Name]</a> [Resource Description].
+                                      
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader5" mc:label="Section Header" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 24px;font-weight: bold;line-height: 30px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;color: #ff5000;">
+                                    Best of social
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr mc:hideable>
+                          <td align="center" valign="top" class="vertical-padding social" style="border-collapse: collapse;padding-top: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="social__links" style="border-collapse: collapse;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        
+                                                                        <tr mc:repeatable>
+                                  <td align="center" valign="top" class="text text--left list" mc:label="List 5" mc:edit="list5" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;">
+                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 20px;mso-line-height-rule: exactly;mso-special-format: bullet;">
+                                      <li>
+                                      
+                                        [Information] <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">[Link]</a>.
+                                      
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding social__images" style="border-collapse: collapse;padding-top: 25px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" class="social__image" style="border-collapse: collapse;padding-right: 9px;">
+                                            <img src="http://via.placeholder.com/194x194/d2d4d7/333d47" alt="" width="194" height="194" mc:edit="socialimage15" mc:label="Social Image 1" style="border: 0 none;display: block;height: 194px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                          </td>
+                                          <td align="center" valign="top" class="social__image" style="border-collapse: collapse;padding-right: 9px;">
+                                            <img src="http://via.placeholder.com/194x194/d2d4d7/333d47" alt="" width="194" height="194" mc:edit="socialimage25" mc:label="Social Image 2" style="border: 0 none;display: block;height: 194px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                          </td>
+                                          <td align="center" valign="top" class="social__image last" style="border-collapse: collapse;padding-right: 0 !important;">
+                                            <img src="http://via.placeholder.com/194x194/d2d4d7/333d47" alt="" width="194" height="194" mc:edit="socialimage35" mc:label="Social Image 3" style="border: 0 none;display: block;height: 194px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;">
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+
+
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding footer" style="border-collapse: collapse;padding-top: 25px;padding-bottom: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+
+
+                          <td align="center" valign="center" class="social-footer" style="border-collapse: collapse;width: px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="248" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                              <tbody>
+                                <tr>
+                                  
+                                  <td align="center" valign="top" class="social-footer_follow-us" style="border-collapse: collapse;width: 80px;padding-right: 8px;">
+                                    <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/4128a027-fa14-4c8d-a559-8c42f4571126.png" width="80" height="20" border="0" alt="Follow us" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 80px;">
+                                  </td>
+                                  
+                                  
+                                  <td align="center" valign="top" class="social-footer_link" style="border-collapse: collapse;width: 20px;padding-right: 8px;">
+                                    <a href="https://www.linkedin.com/company/jack-morton-worldwide" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/be938083-7b64-497a-a738-277a33d4a547.png" width="20" height="20" border="0" alt="LinkedIn" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                  
+                                  <td align="center" valign="top" class="social-footer_link" style="border-collapse: collapse;width: 20px;padding-right: 8px;">
+                                    <a href="http://instagram.com/jackmorton" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/bf150e2e-5af5-4c5a-8967-5c7e8e1ac91f.png" width="20" height="20" border="0" alt="Instagram" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                  
+                                  <td align="center" valign="top" class="social-footer_link" style="border-collapse: collapse;width: 20px;padding-right: 8px;">
+                                    <a href="http://twitter.com/jackmorton" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/874ffe17-adc3-438c-a277-c44fe289e053.png" width="20" height="20" border="0" alt="Twitter" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                  
+                                  <td align="center" valign="top" class="social-footer_link" style="border-collapse: collapse;width: 20px;padding-right: 8px;">
+                                    <a href="http://www.facebook.com/jackmortonworldwide" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/e207230f-0a14-4e64-931c-3d8c23d82d71.png" width="20" height="20" border="0" alt="Facebook" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                  
+                                  <td align="center" valign="top" class="social-footer_link" style="border-collapse: collapse;width: 20px;padding-right: 8px;">
+                                    <a href="http://vimeo.com/jackmortonww/videos" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/9422120d9fd786331e83871d9/images/83496e41-a820-4329-b358-c6e60ba41c31.png" width="20" height="20" border="0" alt="Vimeo" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                  
+                                  <td align="center" valign="top" class="social-footer_link last" style="border-collapse: collapse;width: 20px;padding-right: 0 !important;">
+                                    <a href="http://jackmorton.com" target="_blank">
+                                      <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/ebd1c7c0-ba21-4128-b95a-6f7417601849.png" width="20" height="20" border="0" alt="Website" style="border: 0 none;display: block;height: 20px;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: 20px;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                <tr>
+                  <td class="tracking-pixel" mc:edit="trackingpixel" style="border-collapse: collapse;padding-bottom: 40px;">
+                    <br>Enter the tracking pixel in the HTML here then delete this text.<br>
+                  </td>
+                </tr>
+
+                <!-- Content ends -->
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

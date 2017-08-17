@@ -1,0 +1,16 @@
+      .wins { }
+      
+      .wins__item {
+        padding-right: 9px;
+        width: 194px;
+      }
+      
+      .wins__image img {
+        height: 100px;
+        width: 194px;
+      }
+      
+      .wins__text {
+        font-size: 14px;
+        line-height: 20px;
+      }
