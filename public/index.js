@@ -7,6 +7,7 @@ const templates = [
   Template('Blank', 'blank.html'),
   Template('Jack news', 'jack-news.html'),
   Template('Jack insider', 'jack-insider.html'),
+  Template('Jack Awards', 'jack-awards.html'),
 ];
 
 const Iframe = () => {
@@ -17,7 +18,7 @@ const Iframe = () => {
     {
       render: filename => {
         node.setAttribute('name', Date.now());
-        node.setAttribute('src', `dist/templates/${filename}?time=${Date.now()}`);
+        node.setAttribute('src', `./templates/${filename}?time=${Date.now()}`);
       },
     },
   );
