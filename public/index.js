@@ -13,7 +13,7 @@ const templates = [
 
 const Iframe = () => {
   const node = document.querySelector('iframe');
-  
+
   return Object.assign(
     {},
     {
@@ -27,7 +27,7 @@ const Iframe = () => {
 
 const NavItem = ({ title, index, selected = false, handleClick}) => {
   const node = document.createElement('button');
-  
+
   return Object.assign(
     {},
     {
@@ -35,11 +35,11 @@ const NavItem = ({ title, index, selected = false, handleClick}) => {
         node.setAttribute('data-index', index);
         node.innerHTML = title;
         node.addEventListener('click', () => handleClick(index));
-        
+
         if (selected) {
           node.setAttribute('class', 'selected');
-        } 
-        
+        }
+
         return node;
       },
     },
@@ -47,16 +47,16 @@ const NavItem = ({ title, index, selected = false, handleClick}) => {
 };
 
 const Nav = ({ handleClick }) => {
-  const node = document.querySelector('nav');
-  
+  const node = document.querySelector('.nav__container');
+
   let navItems = [];
-  
+
   return Object.assign(
     {},
     {
       render: ({ currentIndex }) => {
         node.innerHTML = '';
-        
+
         navItems = templates.map((template, index) => {
           const { title } = template;
           const selected = index === currentIndex;
@@ -65,27 +65,27 @@ const Nav = ({ handleClick }) => {
         });
         
         navItems.forEach(navItem => node.appendChild(navItem));
-        
+
         return node;
       },
     },
   );
 };
 
-const App = () => {  
+const App = () => {
   let state = {
     currentIndex: 0,
   };
-    
+
   const render = () => {
     const { currentIndex } = state;
     const currentTemplate = templates[currentIndex];
     const { filename } = currentTemplate;
-    
+
     nav.render({ currentIndex });
     iframe.render(filename);
   }
-  
+
   const getCurrentIndex = () => state.currentIndex;
 
   const setCurrentIndex = (currentIndex) => {
@@ -93,13 +93,13 @@ const App = () => {
     state = newState;
     render();
   };
-  
+
   const nav = Nav({ handleClick: setCurrentIndex });
   const iframe = Iframe();
-  
+
   return Object.assign(
     {},
-    { 
+    {
       getCurrentIndex,
       setCurrentIndex,
       render,
@@ -109,4 +109,3 @@ const App = () => {
 
 const app = App();
 app.render();
-
