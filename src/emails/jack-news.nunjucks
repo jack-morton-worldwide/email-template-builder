@@ -56,19 +56,15 @@
 
 
 {% block content %}
-{% set serial = 1 %}
-{% include "partials/images/full-width/full-width.html" %}
+{% set serial = 1 %}{% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/text/full-width/full-width.html" %}
 
-{% set text = 'Global press' %}
-{% include "partials/section-header/section-header.html" %}
+{% set text = 'Global press' %}{% include "partials/section-header/section-header.html" %}
 
 {% include "partials/text/two-column-bulleted/two-column-bulleted.html" %}
 
-{% set serial = 2 %}
-{% set text = 'Brand news' %}
-{% include "partials/section-header/section-header.html" %}
+{% set serial = 2 %}{% set text = 'Brand news' %}{% include "partials/section-header/section-header.html" %}
 
 {% include "partials/images/full-width/full-width.html" %}
 
@@ -79,10 +75,9 @@
 {% include "partials/footers/brand-marketing/brand-marketing.html" %}
 {% endblock %}
 
+
 {% block footer %}
-{% set contactEmail = "experience@jackmorton.com" %}
-{% set variant = "brand-marketing" %}
-{% include "partials/footers/contact-html.nunjucks" %}
+{% set contactEmail = "experience@jackmorton.com" %}{% set variant = "brand-marketing" %}{% include "partials/footers/contact-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}

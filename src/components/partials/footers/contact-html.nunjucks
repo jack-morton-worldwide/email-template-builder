@@ -5,8 +5,7 @@
                         <tr>
 {% include "partials/footers/hear-from-you/hear-from-you.html" %}
 
-{% set align = 'right' %}
-{% include "partials/footers/social/social.html" %}
+{% set align = 'right' %}{% include "partials/footers/social/social.html" %}
                         </tr>
                       </tbody>
                     </table>

@@ -36,21 +36,22 @@
 {% endblock %}
 
 
-{% block content %}
+{% block header %}
 {% include "partials/preheader/preheader.html" %}
 
 {% include "partials/header/header.html" %}
+{% endblock %}
 
-{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}
-{% include "partials/section-header/section-header.html" %}
+
+{% block content %}
+{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}{% include "partials/section-header/section-header.html" %}
 
 {% include "standard-html.nunjucks" %}
 {% endblock %}
 
 
 {% block footer %}
-{% set contactEmail = "bruce_henderson@jackmorton.com" %}
-{% include "partials/footers/contact-html.nunjucks" %}
+{% set contactEmail = "bruce_henderson@jackmorton.com" %}{% include "partials/footers/contact-html.nunjucks" %}
 
 {% include "partials/tracking-pixel/tracking-pixel.html" %}
 {% endblock %}

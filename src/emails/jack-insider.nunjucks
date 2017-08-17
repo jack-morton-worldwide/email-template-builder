@@ -59,8 +59,7 @@
 
 
 {% block content %}
-{% set serial = 1 %}
-{% include "partials/images/full-width/full-width.html" %}
+{% set serial = 1 %}{% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/text/full-width/full-width.html" %}
 
@@ -68,35 +67,22 @@
 
 {% include "partials/jack-insider/wins/wins.html" %}
 
-{% set serial = 2 %}
-{% set feature = 'work' %}
-{% set text = 'Featured work' %}
-{% include "partials/section-header/section-header.html" %}
+{% set serial = 2 %}{% set feature = 'work' %}{% set text = 'Featured work' %}{% include "partials/section-header/section-header.html" %}
 {% include "partials/jack-insider/features/features.html" %}
 {% include "partials/jack-insider/more/more.html" %}
 
-{% set serial = 3 %}
-{% set feature = 'press' %}
-{% set text = 'Press' %}
-{% include "partials/section-header/section-header.html" %}
+{% set serial = 3 %}{% set feature = 'press' %}{% set text = 'Press' %}{% include "partials/section-header/section-header.html" %}
 {% include "partials/jack-insider/features/features.html" %}
 {% include "partials/jack-insider/more/more.html" %}
 
-{% set serial = 4 %}
-{% set feature = 'resources' %}
-{% set text = 'Resources' %}
-{% include "partials/section-header/section-header.html" %}
+{% set serial = 4 %}{% set feature = 'resources' %}{% set text = 'Resources' %}{% include "partials/section-header/section-header.html" %}
 {% include "partials/jack-insider/features/features.html" %}
 {% include "partials/jack-insider/more/more.html" %}
 
-{% set serial = 5 %}
-{% set feature = 'social' %}
-{% set text = 'Best of social' %}
-{% include "partials/section-header/section-header.html" %}
+{% set serial = 5 %}{% set feature = 'social' %}{% set text = 'Best of social' %}{% include "partials/section-header/section-header.html" %}
 {% include "partials/jack-insider/social/social.html" %}
-
-
 {% endblock %}
+
 
 {% block footer %}
 {% include "partials/footers/follow-us-html.nunjucks" %}

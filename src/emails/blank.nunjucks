@@ -36,13 +36,15 @@
 {% endblock %}
 
 
-{% block content %}
+{% block header %}
 {% include "partials/preheader/preheader.html" %}
 
 {% include "partials/header/header.html" %}
+{% endblock %}
 
-{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}
-{% include "partials/section-header/section-header.html" %}
+
+{% block content %}
+{% set text = "Type header here\<br\>Arial / type 24px / leading 30px" %}{% include "partials/section-header/section-header.html" %}
 
 {% include "standard-html.nunjucks" %}
 {% endblock %}
