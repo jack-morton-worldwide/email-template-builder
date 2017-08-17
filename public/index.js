@@ -1,13 +1,14 @@
 const Template = (title, filename) => Object.assign({}, { title, filename });
 
 const templates = [
-  Template('CEO update', 'ceo-update.html'),
-  Template('CCO update', 'cco-update.html'),
-  Template('CFO/COO update', 'cfo-coo-update.html'),
   Template('Blank', 'blank.html'),
-  Template('Jack news', 'jack-news.html'),
+  Template('CEO update', 'ceo-update.html'),
+  Template('CFO/COO update', 'cfo-coo-update.html'),
+  Template('CCO update', 'cco-update.html'),
   Template('Jack insider', 'jack-insider.html'),
-  Template('Jack Awards', 'jack-awards.html'),
+  Template('Jack news', 'jack-news.html'),
+  Template('Jack Awards 2017', 'jack-awards-2017.html'),
+  Template('Jack Awards 2018', 'jack-awards-2018.html'),
 ];
 
 const Iframe = () => {

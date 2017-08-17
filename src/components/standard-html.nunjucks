@@ -1,3 +1,5 @@
+{% include "partials/images/full-width/full-width.html" %}
+
 {% include "partials/text/full-width/full-width.html" %}
 
 {% include "partials/text/two-column/two-column.html" %}
@@ -6,10 +8,10 @@
 
 {% include "partials/text/image-left/image-left.html" %}
 
+{% set text = "Section header" %}{% include "partials/section-header/section-header.html" %}
+
 {% include "partials/text/bulleted/bulleted.html" %}
 
 {% include "partials/divider/divider.html" %}
-
-{% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/images/three-up/three-up.html" %}

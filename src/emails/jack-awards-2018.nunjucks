@@ -1,0 +1,99 @@
+{% extends "base.nunjucks" %}
+
+{% block title %}Jack Awards{% endblock %}
+
+
+{% set header = {
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/276bcf18-4eec-4dea-b036-d734bf54fa7c.png',
+  altText: 'Jack Awards 2018',
+  height: '175',
+  width: '640'
+} %}
+
+
+{% set backgroundColor = '#e7e8e9' %}
+{% block backgroundPolor %}{{backgroundColor}}{% endblock %}
+{% block width %}640{% endblock %}
+
+
+{% block styles %}
+{% include "partials/_reset.css" %}
+
+{% include "partials/_base.css" %}
+      
+      .content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+{% include "partials/preheader/preheader.css" %}
+
+{% include "partials/header/header.css" %}
+
+      .header {
+        padding-bottom: 10px;
+      }
+
+{% include "partials/section-header/section-header.css" %}
+
+      .section-header-jack-awards .text {
+        color: #000000;
+      }
+      
+      .section-header-jack-awards .text span {
+        color: #ff5000;
+      }
+
+{% include "standard-css.nunjucks" %}
+
+{% include "partials/footers/contact-css.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.css" %}
+{% endblock %}
+
+
+{% block header %}
+{% include "partials/preheader/preheader.html" %}
+
+{% include "partials/header/header.html" %}
+{% endblock %}
+
+
+{% block content %}
+                        <tr mc:repeatable="content" mc:variant="divider">
+                          <td align="center" valign="top" class="vertical-padding divider" style="border-top-color: #000000; border-top-style: solid; border-top-width: 3px; border-bottom-width: 0px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="text divider" mc:label="Divider"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding section-header section-header-jack-awards">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader{{serial}}" mc:label="Section Header">
+                                    Type header here<br />
+                                    Arial / type 24px / leading 30px<br />
+                                    <span>&#8211;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+
+{% set serial = 1 %}{% include "standard-html.nunjucks" %}
+{% endblock %}
+
+
+{% block footer %}
+{% include "partials/footers/follow-us-html.nunjucks" %}
+
+{% include "partials/tracking-pixel/tracking-pixel.html" %}
+{% endblock %}
