@@ -18,7 +18,7 @@ const Iframe = () => {
     {
       render: filename => {
         node.setAttribute('name', Date.now());
-        node.setAttribute('src', `./templates/${filename}?time=${Date.now()}`);
+        node.setAttribute('src', `dist/templates/${filename}?time=${Date.now()}`);
       },
     },
   );
