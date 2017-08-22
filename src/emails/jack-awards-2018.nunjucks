@@ -20,12 +20,12 @@
 {% include "partials/_reset.css" %}
 
 {% include "partials/_base.css" %}
-      
+
       .content {
         padding-left: 20px;
         padding-right: 20px;
       }
-      
+
 {% include "partials/preheader/preheader.css" %}
 
 {% include "partials/header/header.css" %}
@@ -39,7 +39,7 @@
       .section-header-jack-awards .text {
         color: #000000;
       }
-      
+
       .section-header-jack-awards .text span {
         color: #ff5000;
       }
@@ -65,7 +65,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
                                 <tr>
-                                  <td align="center" valign="top" class="text divider" mc:label="Divider"></td>
+                                  <td align="center" valign="top" class="text" mc:label="Divider"></td>
                                 </tr>
                               </tbody>
                             </table>
