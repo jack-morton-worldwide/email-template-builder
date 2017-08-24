@@ -4,7 +4,7 @@
 
 
 {% set header = {
-  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/7840ea68-71ae-492e-b8a4-10a2b54a4ccc.png',
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/c0b79bb7-a8f0-43e5-a16c-81ab54bc5d74.png',
   altText: 'Jack Awards 2017',
   height: '175',
   width: '640'
@@ -12,8 +12,10 @@
 
 
 {% set backgroundColor = '#e7e8e9' %}
-{% block backgroundPolor %}{{backgroundColor}}{% endblock %}
-{% block width %}640{% endblock %}
+{% block backgroundColor %}{{backgroundColor}}{% endblock %}
+
+{% set width = 640 %}
+{% block width %}{{width}}{% endblock %}
 
 
 {% block styles %}
@@ -60,12 +62,12 @@
 
 
 {% block content %}
-                        <tr mc:repeatable="content" mc:variant="divider">
-                          <td align="center" valign="top" class="vertical-padding divider" style="border-top-color: #000000; border-top-style: solid; border-top-width: 3px; border-bottom-width: 0px;">
+                        <tr>
+                          <td align="center" valign="top" class="vertical-padding" style="border-top-color: #000000; border-top-style: solid; border-top-width: 3px; border-bottom-width: 0px;">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
                                 <tr>
-                                  <td align="center" valign="top" class="text" mc:label="Divider"></td>
+                                  <td align="center" valign="top" class="text"></td>
                                 </tr>
                               </tbody>
                             </table>

@@ -1,6 +1,6 @@
-{% include "partials/images/full-width/full-width.html" %}
-
 {% include "partials/text/full-width/full-width.html" %}
+
+{% include "partials/images/full-width/full-width.html" %}
 
 {% include "partials/text/two-column/two-column.html" %}
 

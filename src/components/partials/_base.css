@@ -26,7 +26,11 @@
         background-color: {{backgroundColor}};
         height: 100%;
       }
-      
+
+      #emailContainer {
+        width: {{width}}px;
+      }
+
       .content {
         background-color: #ffffff;
         padding-bottom: 40px;
@@ -67,7 +71,7 @@
       .vertical-padding {
         padding-top: 25px;
       }
-      
+
       .last {
         padding-right: 0 !important;
       }
