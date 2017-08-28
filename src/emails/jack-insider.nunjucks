@@ -20,7 +20,7 @@
 {% include "partials/_reset.css" %}
 
 {% include "partials/_base.css" %}
-      
+
       .content {
         padding-top: 25px;
         padding-left: 20px;
@@ -63,8 +63,7 @@
 
 {% include "partials/text/full-width/full-width.html" %}
 
-{% include "partials/section-header/section-header.html" %}
-
+{% set text = 'Wins' %}{% include "partials/section-header/section-header.html" %}
 {% include "partials/jack-insider/wins/wins.html" %}
 
 {% set serial = 2 %}{% set feature = 'work' %}{% set text = 'Featured work' %}{% include "partials/section-header/section-header.html" %}

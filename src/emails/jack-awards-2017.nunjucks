@@ -75,11 +75,11 @@
                         </tr>
 
                         <tr>
-                          <td align="center" valign="top" class="vertical-padding section-header section-header-jack-awards">
+                          <td align="center" valign="top" class="section-header section-header-jack-awards">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
                                 <tr>
-                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader{{serial}}" mc:label="Section Header">
+                                  <td align="center" valign="top" class="text text--left" mc:edit="sectionheader{{serial}}" mc:label="Section Header">
                                     Type header here<br />
                                     Arial / type 24px / leading 30px<br />
                                     <span>&#8211;</span>

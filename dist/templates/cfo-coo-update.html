@@ -106,24 +106,21 @@
         font-family: arial,sans-serif;
         font-size: 1em;
         Margin: 0;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: 0;
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-        padding-left: 20px;
+        padding: 0;
         mso-line-height-rule: exactly;
+      }
+
+      ol li {
+        list-style: decimal;
+      }
+
+      ul li {
+        list-style: disc;
         mso-special-format: bullet;
       }
 
-      ol ul, ul ol {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        mso-line-height-rule: exactly;
+      li {
+        Margin: 0 0 0.25em 2em;
       }
 
       #bodyTable {
@@ -319,6 +316,14 @@
       }
 
     </style>
+
+    <!--[if gte mso 9]>
+    <style>
+      li {
+        text-indent: -1em; /* Normalise space between bullets and text */
+      }
+    </style>
+    <![endif]-->
   </head>
   <body bgcolor="#ffffff" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;height: 100%;margin: 0;padding: 0;background-color: #ffffff;width: 100% !important;">
@@ -354,7 +359,7 @@
                       <tbody>
                         <tr>
                           <td align="center" valign="top" class="image" style="border-collapse: collapse;">
-                            <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/0f370aeb-fc9f-4ee6-a462-385749a2239a.png" alt="CFO/COO Update" border="0" width="600" height="200" mc:label="Header Image" mc:edit="headerimage" style="border: 0 none;display: block;height: px;line-height: 25px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;background-color: #ffffff;color: #333d47;font-size: 32px;font-weight: bold;text-align: left;width: px;">
+                            <img src="https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/c560cc16-9c06-49ae-b573-eeae81a6dd80.png" alt="CFO/COO Update" border="0" width="600" height="199" mc:label="Header Image" mc:edit="headerimage" style="border: 0 none;display: block;height: px;line-height: 25px;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;background-color: #ffffff;color: #333d47;font-size: 32px;font-weight: bold;text-align: left;width: px;">
                           </td>
                         </tr>
                       </tbody>
@@ -486,11 +491,11 @@
                               <tbody>
                                 <tr>
                                   <td align="center" valign="top" class="vertical-padding text text--left" mc:label="Bulleted Text" mc:edit="bulletedtext" style="border-collapse: collapse;font-family: arial, helvetica, sans-serif;font-size: 16px;font-weight: normal;line-height: 25px;mso-line-height-rule: exactly;-webkit-text-size-adjust: none;text-align: left;padding-top: 25px;">
-                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;margin-left: 0;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 20px;mso-line-height-rule: exactly;mso-special-format: bullet;">
-                                      <li><strong>Bulleted text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                      <li>In sagittis tortor id metus rutrum, eu <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">consequat purus</a> dignissim. In egestas rutrum nisl.</li>
-                                      <li>Vitae imperdiet nibh, duis in tincidunt ipsum. Vestibulum sagittis elementum sodales.</li>
-                                      <li>Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.</li>
+                                    <ul style="font-family: arial,sans-serif;font-size: 1em;margin: 0;padding: 0;mso-line-height-rule: exactly;">
+                                      <li style="margin: 0 0 0.25em 2em;list-style: disc;mso-special-format: bullet;"><strong>Bulleted text</strong> | Arial / type 16px / leading 25px | Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                      <li style="margin: 0 0 0.25em 2em;list-style: disc;mso-special-format: bullet;">In sagittis tortor id metus rutrum, eu <a href="#" target="_blank" style="color: #ff5000;font-weight: bold;text-decoration: underline;">consequat purus</a> dignissim. In egestas rutrum nisl.</li>
+                                      <li style="margin: 0 0 0.25em 2em;list-style: disc;mso-special-format: bullet;">Vitae imperdiet nibh, duis in tincidunt ipsum. Vestibulum sagittis elementum sodales.</li>
+                                      <li style="margin: 0 0 0.25em 2em;list-style: disc;mso-special-format: bullet;">Cras sodales odio tortor, id tristique est bibendum vitae. Suspendisse in odio nisl.</li>
                                     </ul>
                                   </td>
                                 </tr>

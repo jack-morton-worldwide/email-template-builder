@@ -5,9 +5,9 @@
 
 
 {% set header = {
-  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/fdb7fe6c-153c-4309-87ae-dcc45a24a8a0.png',
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/a7c78456-7905-4298-a998-b23648651a80.png',
   altText: 'CCO Update',
-  height: '200',
+  height: '199',
   width: '600'
 } %}
 

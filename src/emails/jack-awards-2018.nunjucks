@@ -4,7 +4,7 @@
 
 
 {% set header = {
-  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/276bcf18-4eec-4dea-b036-d734bf54fa7c.png',
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/77a55952-9097-4516-8501-2d1f80307a77.png',
   altText: 'Jack Awards 2018',
   height: '175',
   width: '640'
@@ -61,7 +61,7 @@
 
 {% block content %}
                         <tr>
-                          <td align="center" valign="top" class="vertical-padding divider" style="border-top-color: #000000; border-top-style: solid; border-top-width: 3px; border-bottom-width: 0px;">
+                          <td align="center" valign="top" class="vertical-padding" style="border-top-color: #000000; border-top-style: solid; border-top-width: 3px; border-bottom-width: 0px;">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
                                 <tr>
@@ -73,11 +73,11 @@
                         </tr>
 
                         <tr>
-                          <td align="center" valign="top" class="vertical-padding section-header section-header-jack-awards">
+                          <td align="center" valign="top" class="section-header section-header-jack-awards">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tbody>
                                 <tr>
-                                  <td align="center" valign="top" class="vertical-padding text text--left" mc:edit="sectionheader{{serial}}" mc:label="Section Header">
+                                  <td align="center" valign="top" class="text text--left" mc:edit="sectionheader{{serial}}" mc:label="Section Header">
                                     Type header here<br />
                                     Arial / type 24px / leading 30px<br />
                                     <span>&#8211;</span>

@@ -5,9 +5,9 @@
 
 
 {% set header = {
-  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/0f370aeb-fc9f-4ee6-a462-385749a2239a.png',
+  imgSRC: 'https://gallery.mailchimp.com/362b63903562575c68a4b5776/images/c560cc16-9c06-49ae-b573-eeae81a6dd80.png',
   altText: 'CFO/COO Update',
-  height: '200',
+  height: '199',
   width: '600'
 } %}
 

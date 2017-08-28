@@ -1,13 +1,40 @@
+      .social__logo-header {
+        padding-bottom: 5px;
+      }
+
+      .social__logo-header .logo-header__image,
+      .social__logo-header .logo-header__image img {
+        height: 30px;
+        width: 30px;
+      }
+
+      .social__logo-header .logo-header__text {
+        font-weight: bold;
+        line-height: 30px;
+        padding-left: 16px;
+        text-align: left;
+        vertical-align: middle;
+        width: 554px;
+      }
+
+      .social__images {
+        padding-top: 10px;
+      }
+
       .social__image .social__image img {
         width: 194px;
       }
-      
+
       .social__image {
         padding-right: 9px;
       }
-      
+
       .social__image img {
         height: 194px;
       }
-      
+
+      .social__image .image__description {
+        padding-top: 10px;
+      }
+
 {% include "partials/jack-insider/list/list.css" %}
